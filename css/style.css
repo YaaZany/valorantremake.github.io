@@ -1,17 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 :root {
-  --backColor: #43454d;
-  --softwhite: #f6f2e8;
-  --poppy: #f9ac34;
-  --natural: #e3ded0;
+  --red: #f94555;
 }
 
 * {
   font-family: 'Bebas Neue', cursive;
-  color: var(--softwhite);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1vw;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
 }
 
-body {
-  background-color: var(--backColor);
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  padding: 0 1vw 0 1vw;
+}
+
+header button {
+  cursor: pointer;
+  border-radius: 1vw;
+  width: 5vw;
+  height: 2vw;
+  background-color: var(--red);
+}
+
+header .logo {
+  background-color: inherit;
+  height: 5vw;
+  width: 5vw;
+  cursor: pointer;
+}
+
+header .nav__links {
+  background-color: white;
+  list-style: none;
+}
+
+header .nav__links li {
+  background-color: black;
+  display: inline-block;
+  padding: 0 1vw;
+}
+
+header .nav__links li a {
+  background-color: black;
+}
+
+header .nav__links li button {
+  background-color: black;
+  color: white;
+  height: 2vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 1vw;
+}
+
+header .nav__links li button:hover {
+  background-color: var(--red);
+}
+
+.hero {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .content {
+  color: white;
+  text-align: center;
+}
+
+.hero button {
+  color: white;
+}
+
+.hero .back-video {
+  z-index: -1;
+  width: 100%;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

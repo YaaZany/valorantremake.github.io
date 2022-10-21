@@ -1,17 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root{
-    --backColor: #43454d;
-    --softwhite: #f6f2e8;
-    --poppy: #f9ac34;
-    --natural: #e3ded0;
+    --red: #f94555;
 }
 
 *{
-   font-family: 'Bebas Neue', cursive;
-   color: var(--softwhite);
+    font-family: 'Bebas Neue', cursive;
+    box-sizing: border-box;
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
 }
 
-body{
-    background-color: var(--backColor);
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 1vw 0 1vw;
+
+    button{
+        cursor: pointer;
+        border-radius: 1vw;
+        width: 5vw;
+        height: 2vw;
+        background-color: var(--red);
+    }
+    
+    .logo{
+        background-color: inherit;
+        height: 5vw;
+        width: 5vw;
+        cursor: pointer;
+    }
+
+    .nav__links{
+        background-color: white;
+        list-style: none;
+        li{
+            background-color: black;
+            display: inline-block;
+            padding: 0 1vw;
+
+            a{
+                background-color: black;
+            }
+
+            button{
+                background-color: black;
+                color: white;
+                height: 2vw;
+                width: fit-content;
+                padding: 0 1vw;
+            }
+
+            button:hover{
+                background-color: var(--red)
+            }
+        }
+    }
+}
+
+.hero{
+    justify-content: center;
+    align-items: center;
+
+    button{
+        color: white;
+    }
+
+    .back-video{
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+    }
 }
